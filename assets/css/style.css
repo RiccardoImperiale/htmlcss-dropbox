@@ -100,6 +100,10 @@ hr {
     color: var(--drop-light);
 }
 
+.btn a {
+    color: var(--drop-light);
+}
+
 .btn-outline {
     background-color: var(--drop-light);
     border: 1px solid var(--drop-dark);
@@ -190,7 +194,6 @@ section.hero {
 }
 
 /* Plans Section ------------------------------> */
-
 
 section.plans {
     padding-top: 8rem;
@@ -458,7 +461,6 @@ section.clients {
 .clients_logos .col:nth-child(3) .logo:nth-child(4) {
     background-color: var(--drop-logo-clear);
 }
-
 
 
 /* Call To Action Section ------------------------------> */

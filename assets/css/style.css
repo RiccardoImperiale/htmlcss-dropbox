@@ -142,7 +142,7 @@ hr {
 }
 
 .col-12 {
-    width: calc(100% - 1.5rem);
+    width: calc(100%);
 }
 
 .col-8 {

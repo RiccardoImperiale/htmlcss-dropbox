@@ -28,11 +28,15 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: .8rem;
+    font-size: .85rem;
 }
 
 h1 {
     font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
 }
 
 
@@ -42,6 +46,13 @@ h1 {
     background-color: rgb(212, 255, 241);
 }
 
+.debug .choices_card {
+    background-color: #fd0b6c;
+}
+
+.debug .contact_card {
+    background-color: #61082B;
+}
 
 
 /* Utilities */
@@ -89,16 +100,20 @@ h1 {
     width: 100%;
 }
 
-.container-md {}
+.container-md {
+    max-width: 620px;
+    margin: auto;
+    width: 100%;
+}
 
 
-/* Header */
+/* Header ------------------------------> */
 
 nav {
     padding: 1rem 0;
 }
 
-/* Hero Section */
+/* Hero Section  ------------------------------> */
 
 section.hero {
     background-color: var(--drop-primary-light);
@@ -106,7 +121,7 @@ section.hero {
     height: 500px;
 }
 
-.hero_bottom{
+.hero_bottom {
     margin-top: 2rem;
 }
 
@@ -122,11 +137,38 @@ section.hero {
     width: 65%;
 }
 
-.free_trial_btn{
+.free_trial_btn {
     margin: 1rem 0;
 }
 
-.fa-arrow-down{
+.fa-arrow-down {
     font-size: 2rem;
     margin-top: 2.5rem;
+}
+
+/* Plans Section ------------------------------> */
+
+.debug .plans {
+    padding: 8rem 0;
+}
+
+.plans_cards {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.choices_card {
+    border: 1px solid black;
+    flex: 1;
+    padding: 1rem;
+}
+
+.plans .container-md {
+    gap: 1.5rem;
+}
+
+/* Footer Styles ------------------------------> */
+
+footer {
+    background-color: var(--drop-dark);
 }

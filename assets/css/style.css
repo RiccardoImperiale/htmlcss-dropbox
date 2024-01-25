@@ -483,10 +483,40 @@ section.faq {
     border-bottom: 1px solid var(--drop-dark);
 }
 
-
-
 /* Footer Styles ------------------------------> */
 
 footer {
+    padding: 5rem 0 3rem 0;
     background-color: var(--drop-dark);
+    color: var(--drop-light);
+}
+
+.footer_top .footer_list{
+    flex: 1;
+}
+
+.footer_top ul {
+    list-style: none;
+    margin-top: 1rem;
+    color: var(--drop-light);
+    line-height: 1.5rem;
+}
+
+.footer_top li a {
+    color: var(--drop-light);
+    font-size: .7rem;
+}
+
+.footer_bottom .line {
+    width: 85px;
+    border-top: 1px solid white;
+    margin: 4rem 0 2rem 0;
+}
+
+.footer_bottom span {
+   margin: 0 0.3rem;
+ }
+
+.footer_bottom .fa-angle-up {
+   font-size: .65rem;
 }

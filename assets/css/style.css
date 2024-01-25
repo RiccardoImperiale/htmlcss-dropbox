@@ -175,7 +175,8 @@ section.hero {
 
 
 section.plans {
-    padding: 8rem 0;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
     background-color: var(--drop-light);
 }
 
@@ -292,7 +293,7 @@ section.plans {
 /* Partners Section ------------------------------> */
 
 section.partners {
-    height: 500px;
+    padding: 4rem 0;
     background-color: var(--drop-light);
 }
 
@@ -316,14 +317,30 @@ section.partners {
 
 /* Partners Business ------------------------------> */
 
-.business_card {
-    flex-wrap: wrap;
+section.business {
+    padding: 4rem 0;
+    background-color: var(--drop-light);
 }
 
+.business_cards {
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    /* gap: 1.5rem; */
+    row-gap:3rem;
+    column-gap: 1.5rem;
+}
 
-.business_cards .card {
-    background-color: #0061FF;
-    height: 100px;
+.business_cards .card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* .business_cards .card {
+   background-color: #0061FF;
+} */
+
+.business_cards .card img {
+    width: 100%;
 }
 
 

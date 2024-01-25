@@ -29,7 +29,8 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: .85rem;
+    font-size: .8rem;
+    cursor: pointer;
 }
 
 h1 {
@@ -51,13 +52,7 @@ hr {
 
 /* Debug */
 
-.debug header {
-    background-color: rgb(212, 255, 241);
-}
 
-.debug .contact_card {
-    background-color: #61082B;
-}
 
 
 /* Utilities */
@@ -110,8 +105,26 @@ hr {
     width: 100%;
 }
 
+.card-4 {
+    border: 1px solid var(--drop-secondary);
+    width: calc((100% / 12) * 4 - 1.5rem);
+}
+
+.card-12 {
+    border: 1px solid var(--drop-secondary);
+    width: calc(100% - 1.5rem);
+}
+
+.card-8 {
+    width: calc((100% / 12) * 8);
+}
+
 
 /* Header ------------------------------> */
+
+header {
+    background-color: var(--drop-light);
+}
 
 nav {
     padding: 1rem 0;
@@ -155,6 +168,7 @@ section.hero {
 
 section.plans {
     padding: 8rem 0;
+    background-color: var(--drop-light);
 }
 
 .plans .container-md {
@@ -166,15 +180,9 @@ section.plans {
     margin-left: .45rem;
 }
 
-
 .plans_cards {
     flex-wrap: wrap;
     gap: 1.5rem;
-}
-
-.card {
-    border: 1px solid var(--drop-secondary);
-    flex: 1;
 }
 
 .card_top {
@@ -183,11 +191,14 @@ section.plans {
     padding: .5rem 0;
 }
 
-.card_top i, .card_center i, .card_bottom i {
+.card_top i,
+.card_center i,
+.card_bottom i {
     margin-right: 0.25rem;
 }
 
-.card_center i, .card_bottom i {
+.card_center i,
+.card_bottom i {
     padding-top: 0.25rem;
 }
 
@@ -195,12 +206,11 @@ section.plans {
     margin-bottom: .85rem;
 }
 
-.card_center .card_price{
+.card_center .card_price {
     font-weight: 700;
-    /* font-size: 3rem; */
 }
 
-.card_center > div:first-of-type{
+.card_center>div:first-of-type {
     font-size: .7rem;
     margin-top: .3rem;
     margin-bottom: 2rem;
@@ -216,7 +226,7 @@ section.plans {
     padding-bottom: 3rem;
 }
 
-.card .line {
+.card-4 .line {
     position: absolute;
     width: 2rem;
     top: 0;
@@ -229,11 +239,11 @@ section.plans {
     margin-top: 1rem;
 }
 
-.card_features{
+.card_features {
     margin-bottom: 2rem;
 }
 
-.feature span{
+.feature span {
     font-size: .7rem;
 }
 
@@ -246,7 +256,29 @@ section.plans {
     color: blue;
 }
 
+.contact_card>div:nth-of-type(2) {
+    gap: 1.5rem;
+}
 
+.card_left {
+    padding: 1.5rem;
+}
+
+.card_left h3 {
+    margin-bottom: 1rem;
+}
+
+.card_left h4 {
+    margin-bottom: 2.5rem;
+}
+
+.card_right {
+    padding: 1.5rem;
+}
+
+.contact_card .card-4 {
+    border: none;
+}
 
 
 /* Footer Styles ------------------------------> */

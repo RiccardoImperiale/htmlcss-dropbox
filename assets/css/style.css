@@ -45,7 +45,7 @@ h4 {
     font-size: .75rem;
 }
 
-p{
+p {
     font-size: .8rem;
 }
 
@@ -87,7 +87,7 @@ hr {
     color: var(--drop-light);
 }
 
-.btn-outline{
+.btn-outline {
     background-color: var(--drop-light);
     border: 1px solid var(--drop-dark);
     color: var(--drop-dark);
@@ -111,20 +111,19 @@ hr {
     width: 100%;
 }
 
-.border-gray{
+.border-gray {
     border: 1px solid var(--drop-secondary);
 }
 
-.card-4 {
- 
-    width: calc((100% / 12) * 4 - 1.5rem);
+.col-4 {
+    width: calc((100% / 12) * 4 - 1rem);
 }
 
-.card-12 {
+.col-12 {
     width: calc(100% - 1.5rem);
 }
 
-.card-8 {
+.col-8 {
     width: calc((100% / 12) * 8);
 }
 
@@ -239,7 +238,7 @@ section.plans {
     color: var(--drop-primary);
 }
 
-.card-4 .line {
+.col-4 .line {
     position: absolute;
     width: 2rem;
     top: 0;
@@ -297,26 +296,35 @@ section.partners {
     background-color: var(--drop-light);
 }
 
-.partners .d-flex{
+.partners .d-flex {
     gap: 2rem;
 }
 
-.partners .partners_image{
+.partners .partners_image {
     width: 60%;
 }
 
-.partners .partners_text{
+.partners .partners_text {
     width: 30%;
     padding: 2.5rem 0;
     gap: 1rem;
 }
 
-.partners .partners_image img{
+.partners .partners_image img {
     width: 100%;
 }
 
+/* Partners Business ------------------------------> */
+
+.business_card {
+    flex-wrap: wrap;
+}
 
 
+.business_cards .card {
+    background-color: #0061FF;
+    height: 100px;
+}
 
 
 /* Footer Styles ------------------------------> */

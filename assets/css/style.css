@@ -1,0 +1,17 @@
+:root {
+    --drop-dark: #000000;
+    --drop-light: #ffffff;
+    --drop-primary: #0061FF;
+    --drop-primary-light: #B4D0E7;
+    --drop-accent: #61082B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}

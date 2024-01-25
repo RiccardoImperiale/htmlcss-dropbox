@@ -14,6 +14,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    font-size: .8rem;
 }
 
 a {
@@ -27,7 +28,11 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: 3.5rem;
 }
 
 
@@ -37,10 +42,16 @@ button {
     background-color: rgb(212, 255, 241);
 }
 
+
+
 /* Utilities */
 
 .d-flex {
     display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .justify-content-beetween {
@@ -72,7 +83,11 @@ button {
     width: 90%;
 }
 
-.container-lg {}
+.container-lg {
+    max-width: 820px;
+    margin: auto;
+    width: 100%;
+}
 
 .container-md {}
 
@@ -81,4 +96,37 @@ button {
 
 nav {
     padding: 1rem 0;
+}
+
+/* Hero Section */
+
+section.hero {
+    background-color: var(--drop-primary-light);
+    padding-top: 3rem;
+    height: 500px;
+}
+
+.hero_bottom{
+    margin-top: 2rem;
+}
+
+.hero_image img {
+    width: 110%;
+}
+
+.hero_text {
+    width: 35%;
+}
+
+.hero_image {
+    width: 65%;
+}
+
+.free_trial_btn{
+    margin: 1rem 0;
+}
+
+.fa-arrow-down{
+    font-size: 2rem;
+    margin-top: 2.5rem;
 }

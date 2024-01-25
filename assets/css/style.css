@@ -280,6 +280,7 @@ section.plans {
 
 .card_center button {
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .card_center a {

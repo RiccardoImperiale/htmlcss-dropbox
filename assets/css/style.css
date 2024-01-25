@@ -148,6 +148,12 @@ section.hero {
 
 /* Plans Section ------------------------------> */
 
+
+.billing  label {
+  margin-right: 2rem;
+  margin-left: .45rem;
+}
+
 .debug .plans {
     padding: 8rem 0;
 }

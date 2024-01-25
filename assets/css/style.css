@@ -452,7 +452,6 @@ section.call_to_action {
 
 .call_to_action h2 {
     color: var(--drop-accent);
-
 }
 
 .call_to_action .col_title {
@@ -464,7 +463,25 @@ section.call_to_action {
     text-align: end;
 }
 
+/* FAQ Section ------------------------------> */
 
+section.faq {
+    padding: 6rem 0;
+    background-color: var(--drop-light);
+}
+
+.faq h2 {
+    margin-bottom: 2rem;
+}
+
+.faq .question {
+    padding: 2rem 2rem 2rem 0;
+    border-top: 1px solid var(--drop-dark);
+}
+
+.faq .question:last-child {
+    border-bottom: 1px solid var(--drop-dark);
+}
 
 
 

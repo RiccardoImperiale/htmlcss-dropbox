@@ -15,3 +15,70 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: var(--drop-dark);
+}
+
+button {
+    border: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+/* Debug */
+
+.debug header {
+    background-color: rgb(212, 255, 241);
+}
+
+/* Utilities */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-beetween {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.list-inline {
+    list-style: none;
+    gap: 2rem
+}
+
+.btn {
+    background-color: var(--drop-primary);
+    color: var(--drop-light);
+}
+
+/* .btn-outline{
+
+} */
+
+
+.container-xl {
+    max-width: 1900px;
+    margin: auto;
+    width: 90%;
+}
+
+.container-lg {}
+
+.container-md {}
+
+
+/* Header */
+
+nav {
+    padding: 1rem 0;
+}

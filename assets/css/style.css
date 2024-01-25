@@ -5,6 +5,13 @@
     --drop-primary-light: #B4D0E7;
     --drop-accent: #61082B;
     --drop-secondary: lightgray;
+    --drop-secondary-lighter: #F5F5F5;
+
+    --drop-logo-designit: #A2D39B;
+    --drop-logo-designit-light: #d3e6d0;
+    --drop-logo-asu: #61082B;
+    --drop-logo-florida: #0093CE;
+    --drop-logo-topps: #FF1C1C;
 }
 
 * {
@@ -52,6 +59,8 @@ p {
 hr {
     border: 1px solid var(--drop-secondary);
     border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
 /* Debug */
@@ -315,7 +324,7 @@ section.partners {
     width: 100%;
 }
 
-/* Partners Business ------------------------------> */
+/* Business Section ------------------------------> */
 
 section.business {
     padding: 4rem 0;
@@ -326,7 +335,7 @@ section.business {
     margin-top: 2rem;
     flex-wrap: wrap;
     /* gap: 1.5rem; */
-    row-gap:3rem;
+    row-gap: 3rem;
     column-gap: 1.5rem;
 }
 
@@ -335,13 +344,100 @@ section.business {
     font-size: 1.1rem;
 }
 
-/* .business_cards .card {
-   background-color: #0061FF;
-} */
-
 .business_cards .card img {
     width: 100%;
 }
+
+/* Clients Section ------------------------------> */
+
+section.clients {
+    padding: 4rem 0;
+    background-color: var(--drop-light);
+}
+
+.clients h2 {
+    margin-bottom: 2rem;
+}
+
+.clients a {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+
+
+
+.clients_logos {
+    background-color: #0061FF;
+}
+
+.clients_logos {
+    width: 100vw;
+    /* height: 500px; */
+}
+
+.clients_logos .col {
+    flex-wrap: wrap;
+    flex: 1;
+    /* border: 1px solid black; */
+}
+
+
+.clients_logos .col:nth-child(2) {
+    padding: 3rem;
+    background-color: var(--drop-secondary-lighter);
+    gap: 1.5rem;
+}
+
+.clients_logos .col:nth-child(2) img {
+    filter: none;
+    width: 50%;
+
+}
+
+.clients_logos .logo {
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    padding: 4rem;
+}
+
+.clients_logos img {
+    width: 100%;
+    filter: invert(1);
+}
+
+.clients_logos .logo:first-child {
+    background-color: var(--drop-logo-designit);
+    border: 1rem solid var(--drop-logo-designit-light);
+    padding: 3rem;
+}
+
+.clients_logos .logo:nth-child(2) {
+    background-color: var(--drop-logo-asu);
+}
+
+.clients_logos .logo:nth-child(3) {
+    background-color: var(--drop-logo-florida);
+}
+
+.clients_logos .logo:nth-child(4) {
+    background-color: var(--drop-logo-topps);
+}
+
+.clients_logos .line {
+    width: 80px;
+    margin: 2rem 0;
+}
+
+.clients_logos p{
+    margin: 2rem 0;
+}
+
+
+
 
 
 /* Footer Styles ------------------------------> */

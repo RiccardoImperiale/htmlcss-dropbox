@@ -111,13 +111,16 @@ hr {
     width: 100%;
 }
 
-.card-4 {
+.border-gray{
     border: 1px solid var(--drop-secondary);
+}
+
+.card-4 {
+ 
     width: calc((100% / 12) * 4 - 1.5rem);
 }
 
 .card-12 {
-    border: 1px solid var(--drop-secondary);
     width: calc(100% - 1.5rem);
 }
 
@@ -286,9 +289,6 @@ section.plans {
     padding: 1.5rem;
 }
 
-.contact_card .card-4 {
-    border: none;
-}
 
 /* Partners Section ------------------------------> */
 
@@ -310,7 +310,6 @@ section.partners {
     padding: 2.5rem 0;
     gap: 1rem;
 }
-
 
 .partners .partners_image img{
     width: 100%;

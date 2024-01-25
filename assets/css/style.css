@@ -12,6 +12,10 @@
     --drop-logo-asu: #61082B;
     --drop-logo-florida: #0093CE;
     --drop-logo-topps: #FF1C1C;
+    --drop-logo-bicicle: #D5001F;
+    --drop-logo-hearest: #B4D0E7;
+    --drop-logo-lonely: #0D2481;
+    --drop-logo-clear: #FFD830;
 }
 
 * {
@@ -370,25 +374,20 @@ section.clients {
 }
 
 
-
-
-
+/* Logos --------->  */
 
 .clients_logos {
     background-color: #0061FF;
 }
 
-.clients_logos {
+/* .clients_logos {
     width: 100vw;
-    /* height: 500px; */
-}
+} */
 
 .clients_logos .col {
     flex-wrap: wrap;
     flex: 1;
-    /* border: 1px solid black; */
 }
-
 
 .clients_logos .col:nth-child(2) {
     padding: 3rem;
@@ -398,8 +397,7 @@ section.clients {
 
 .clients_logos .col:nth-child(2) img {
     filter: none;
-    width: 50%;
-
+    width: 35%;
 }
 
 .clients_logos .logo {
@@ -416,8 +414,8 @@ section.clients {
 
 .clients_logos .logo:first-child {
     background-color: var(--drop-logo-designit);
-    border: 1rem solid var(--drop-logo-designit-light);
-    padding: 3rem;
+    border: .8rem solid var(--drop-logo-designit-light);
+    padding: 2.5rem;
 }
 
 .clients_logos .logo:nth-child(2) {
@@ -440,6 +438,25 @@ section.clients {
 .clients_logos p {
     margin: 2rem 0;
 }
+
+.clients_logos .col:nth-child(3) .logo:first-child {
+    background-color: var(--drop-logo-bicicle);
+    border: none;
+}
+
+.clients_logos .col:nth-child(3) .logo:nth-child(2) {
+    background-color: var(--drop-logo-hearest);
+    padding: 1.5rem;
+}
+
+.clients_logos .col:nth-child(3) .logo:nth-child(3) {
+    background-color: var(--drop-logo-lonely);
+}
+
+.clients_logos .col:nth-child(3) .logo:nth-child(4) {
+    background-color: var(--drop-logo-clear);
+}
+
 
 
 /* Call To Action Section ------------------------------> */

@@ -211,6 +211,7 @@ header {
 }
 
 
+
 /* Hero Section  ------------------------------> */
 
 section.hero {
@@ -557,10 +558,22 @@ section.faq {
 .faq .question {
     padding: 2rem 2rem 2rem 0;
     border-top: 1px solid var(--drop-dark);
+    align-items: center;
 }
 
-.faq .question:last-child {
+.faq .questions_list {
     border-bottom: 1px solid var(--drop-dark);
+}
+
+.faq .question:hover+.answer {
+    display: block;
+}
+
+.faq .answer {
+    display: none;
+    padding: 0rem 4rem 2rem 0;
+    align-items: center;
+    color: gray;
 }
 
 

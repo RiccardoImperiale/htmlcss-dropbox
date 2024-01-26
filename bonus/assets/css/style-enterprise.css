@@ -247,16 +247,20 @@ header {
 /* Team Section ------------------------------> */
 
 section.team {
-    padding: 4rem 0;
     background-color: var(--drop-dark);
     color: var(--drop-light);
+}
+
+section.team,
+section.further_info {
+    padding: 4rem 0;
 
     & .top {
         text-align: center;
 
         & h2 {
             line-height: 3.2rem;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
         }
     }
 
@@ -296,10 +300,19 @@ section.team {
 }
 
 
+/* Further Info Section ------------------------------> */
 
+section.further_info {
+    background-color: var(--drop-bg-light);
+    color: var(--drop-dark);
 
-/* Partners Section ------------------------------> */
+    & .card {
 
+        & a {
+            color: var(--drop-dark);
+        }
+    }
+}
 
 
 /* Business Section ------------------------------> */

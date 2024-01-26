@@ -1,5 +1,5 @@
 :root {
-    --drop-dark: #1C1818;
+    --drop-dark: #000000;
     --drop-light: #ffffff;
     --drop-primary: #0061FF;
     --drop-primary-light: #B4D0E7;
@@ -9,7 +9,11 @@
     --drop-dropdown: #F0EBE5;
     --drop-bg: #F8822C;
     --drop-bg-light: #F6F3F0;
+    --drop-bg-dark: #1C1818;
 
+    --drop-logo-asu: #61082B;
+    --drop-logo-bicicle: #D5001F;
+    --drop-logo-hearest: #B4D0E7;
 }
 
 * {
@@ -96,17 +100,6 @@ hr {
     color: var(--drop-light);
 }
 
-/* .btn-outline {
-    background-color: var(--drop-light);
-    border: 1px solid var(--drop-dark);
-    color: var(--drop-dark);
-}
-
-.btn-light {
-    background-color: var(--drop-light);
-    color: var(--drop-dark);
-} */
-
 .container-xl,
 .container-lg {
     margin: auto;
@@ -121,6 +114,10 @@ hr {
     max-width: 1080px;
 }
 
+.container-slider {
+    max-width: 1280px;
+    margin: auto;
+}
 
 .border-gray {
     border: 1px solid var(--drop-secondary);
@@ -200,7 +197,6 @@ header {
 }
 
 
-
 /* Hero Section  ------------------------------> */
 
 
@@ -248,7 +244,7 @@ header {
 
 section.team,
 section.transform {
-    background-color: var(--drop-dark);
+    background-color: var(--drop-bg-dark);
     color: var(--drop-light);
 }
 
@@ -306,12 +302,12 @@ section.transform {
 
 section.further_info {
     background-color: var(--drop-bg-light);
-    color: var(--drop-dark);
+    color: var(--drop-bg-dark);
 
     & .card {
 
         & a {
-            color: var(--drop-dark);
+            color: var(--drop-bg-dark);
         }
     }
 }
@@ -327,6 +323,7 @@ section.transform {
 
 
 /* Banner ------------------------------> */
+
 .banner {
     background-color: var(--drop-bg-light);
     text-align: center;
@@ -334,16 +331,106 @@ section.transform {
 }
 
 
-/* Logos --------->  */
+/* Slider --------------------------------------------->  */
+
+.splide__slide {
+    padding: 6.5rem;
+
+    & .image {
+        width: 35%;
+        aspect-ratio: 1;
+        /* background-color: var(--drop-logo-asu); */
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            width: 40%;
+            filter: invert();
+        }
+    }
+
+    & .text {
+        width: 65%;
+        padding: 3rem;
+        justify-content: center;
+
+        & p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        & h5 {
+            font-size: 1rem;
+        }
+
+    }
+}
+
+.splide__arrow.splide__arrow--next,
+.splide__arrow.splide__arrow--prev {
+    background: transparent;
+    font-size: 2rem;
+}
+
+.splide__arrow.splide__arrow--prev {
+    margin-left: -2rem;
+    display: none;
+}
+
+.splide__arrow.splide__arrow--next {
+    margin-left: 2rem;
+    display: none;
+}
+
+.splide:hover .splide__arrow.splide__arrow--next,
+.splide:hover .splide__arrow.splide__arrow--prev {
+    display: block;
+}
+
+.splide__slide:first-child .image {
+    background-color: var(--drop-logo-asu);
+}
+
+.splide__slide:nth-child(2) .image {
+    background-color: var(--drop-logo-bicicle);
+}
+
+.splide__slide:nth-child(3) .image {
+    background-color: var(--drop-logo-hearest);
+}
 
 
+/* Call To Action Banner ------------------------------> */
 
-/* Call To Action Section ------------------------------> */
+.banner_call_to_action {
+    background-color: var(--drop-bg-dark);
+    color: var(--drop-light);
+    text-align: center;
+    padding: 5rem 0;
+    text-align: start;
+    /* margin-top: 2rem; */
 
+    & div h2 {
+        width: 70%;
+        padding-right: 8rem;
+        line-height: 2.8rem;
+    }
 
+    & .button {
+        width: 30%;
+        /* padding: 1rem 0; */
+    }
 
-/* FAQ Section ------------------------------> */
-
+    & .btn {
+        background-color: #3984ff;
+        /* height: 100%; */
+        color: var(--drop-bg-dark);
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        gap: 1rem;
+       
+    }
+}
 
 
 /* Footer Styles ------------------------------> */

@@ -319,7 +319,11 @@ section.further_info {
 
 /* Transform Section ------------------------------> */
 
-
+section.transform {
+   & .card img {
+    width: 100%;
+   }
+}
 
 
 /* Clients Section ------------------------------> */

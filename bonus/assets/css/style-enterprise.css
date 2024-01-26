@@ -320,14 +320,18 @@ section.further_info {
 /* Transform Section ------------------------------> */
 
 section.transform {
-   & .card img {
-    width: 100%;
-   }
+    & .card img {
+        width: 100%;
+    }
 }
 
 
-/* Clients Section ------------------------------> */
-
+/* Banner ------------------------------> */
+.banner {
+    background-color: var(--drop-bg-light);
+    text-align: center;
+    padding: 5rem 0;
+}
 
 
 /* Logos --------->  */

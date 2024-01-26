@@ -2,6 +2,7 @@
     --drop-dark: #000000;
     --drop-light: #ffffff;
     --drop-primary: #0061FF;
+    --drop-primary-dark: #0057e5;
     --drop-primary-light: #B4D0E7;
     --drop-accent: #61082B;
     --drop-secondary: lightgray;
@@ -15,6 +16,9 @@
     --drop-logo-bicicle: #D5001F;
     --drop-logo-hearest: #B4D0E7;
 }
+
+
+/* #region Commons */
 
 * {
     margin: 0;
@@ -71,8 +75,9 @@ hr {
     border-left: none;
 }
 
+/* #endregion Commons */
 
-/* Utilities */
+/* #region Utilities */
 
 .d-flex {
     display: flex;
@@ -98,6 +103,23 @@ hr {
 .btn {
     background-color: var(--drop-primary);
     color: var(--drop-light);
+    align-items: center;
+}
+
+.btn:hover {
+    background-color: var(--drop-primary-dark);
+}
+
+.btn i.fa-arrow-right {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    transition: .2s;
+}
+
+.btn:hover i.fa-arrow-right {
+    margin-left: 2.5rem;
+    margin-right: .5rem;
+    transition: .2s;
 }
 
 .container-xl,
@@ -139,6 +161,7 @@ hr {
     padding: 1rem;
 }
 
+/* #endregion Utilities */
 
 /* Header ------------------------------> */
 
@@ -168,7 +191,6 @@ header {
 
 .dropdown {
     position: relative;
-
 }
 
 .dropdown_content {
@@ -199,7 +221,6 @@ header {
 
 /* Hero Section  ------------------------------> */
 
-
 .hero_image {
     background-color: var(--drop-bg);
     height: 530px;
@@ -219,10 +240,6 @@ header {
         padding: 1.5rem;
         font-size: 1.2rem;
         margin-top: 2.5rem;
-
-        & i {
-            margin-left: 2.5rem;
-        }
     }
 }
 
@@ -408,7 +425,6 @@ section.transform {
     text-align: center;
     padding: 5rem 0;
     text-align: start;
-    /* margin-top: 2rem; */
 
     & div h2 {
         width: 70%;
@@ -418,17 +434,17 @@ section.transform {
 
     & .button {
         width: 30%;
-        /* padding: 1rem 0; */
     }
 
     & .btn {
         background-color: #3984ff;
-        /* height: 100%; */
         color: var(--drop-bg-dark);
-        padding: 1.5rem 3rem;
+        padding: 1.5rem 1rem 1.5rem 2rem;
         font-size: 1.2rem;
-        gap: 1rem;
-       
+    }
+
+    & .btn:hover {
+        background-color: #5092fb;
     }
 }
 

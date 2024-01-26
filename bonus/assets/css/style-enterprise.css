@@ -1,5 +1,5 @@
 :root {
-    --drop-dark: #000000;
+    --drop-dark: #1C1818;
     --drop-light: #ffffff;
     --drop-primary: #0061FF;
     --drop-primary-light: #B4D0E7;
@@ -9,7 +9,7 @@
     --drop-dropdown: #F0EBE5;
     --drop-bg: #F8822C;
     --drop-bg-light: #F6F3F0;
-    
+
 }
 
 * {
@@ -48,7 +48,8 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 h4 {
@@ -107,8 +108,7 @@ hr {
 } */
 
 .container-xl,
-.container-lg,
-.container-md {
+.container-lg {
     margin: auto;
 }
 
@@ -118,13 +118,9 @@ hr {
 }
 
 .container-lg {
-    max-width: 880px;
+    max-width: 1080px;
 }
 
-.container-md {
-    max-width: 760px;
-
-}
 
 .border-gray {
     border: 1px solid var(--drop-secondary);
@@ -217,7 +213,6 @@ header {
     background-position: center;
 }
 
-
 .hero_text {
     background-color: var(--drop-bg-light);
     padding: 3rem 4rem;
@@ -249,7 +244,56 @@ header {
 }
 
 
-/* Plans Section ------------------------------> */
+/* Team Section ------------------------------> */
+
+section.team {
+    padding: 4rem 0;
+    background-color: var(--drop-dark);
+    color: var(--drop-light);
+
+    & .top {
+        text-align: center;
+
+        & h2 {
+            line-height: 3.2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    & .bottom {
+        gap: 2rem;
+    }
+
+    & .card {
+        width: calc(100% / 4);
+        gap: 2rem;
+        padding-right: .5rem;
+
+        & i {
+            font-size: 2rem;
+            margin-left: .5rem;
+        }
+
+        & p {
+            font-size: .85rem;
+        }
+
+        & a {
+            font-size: .85rem;
+            align-items: center;
+            color: var(--drop-light);
+
+            & span {
+                font-size: 1rem;
+                text-decoration: underline;
+            }
+
+            & i {
+                font-size: .85rem;
+            }
+        }
+    }
+}
 
 
 

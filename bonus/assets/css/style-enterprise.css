@@ -246,13 +246,15 @@ header {
 
 /* Team Section ------------------------------> */
 
-section.team {
+section.team,
+section.transform {
     background-color: var(--drop-dark);
     color: var(--drop-light);
 }
 
 section.team,
-section.further_info {
+section.further_info,
+section.transform {
     padding: 4rem 0;
 
     & .top {
@@ -315,7 +317,7 @@ section.further_info {
 }
 
 
-/* Business Section ------------------------------> */
+/* Transform Section ------------------------------> */
 
 
 

@@ -566,17 +566,20 @@ section.faq {
     border-bottom: 1px solid var(--drop-dark);
 }
 
-.faq .question:hover+.answer {
+summary {
+    list-style: none;
+}
+
+/* .faq .question:hover+.answer {
     display: block;
 }
 
  .question:hover .fa-angle-down {
     rotate: 90deg;
     transition: .25s;
-}
+} */
 
 .faq .answer {
-    display: none;
     padding: 0rem 4rem 2rem 0;
     align-items: center;
     color: gray;

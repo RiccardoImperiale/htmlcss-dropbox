@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: .8rem;
@@ -419,6 +423,7 @@ section.clients {
 
 .clients_logos .left .logo:nth-child(2) {
     background-color: var(--drop-logo-asu);
+
     & img {
         width: 35%;
     }
@@ -430,6 +435,7 @@ section.clients {
 
 .clients_logos .left .logo:nth-child(4) {
     background-color: var(--drop-logo-topps);
+
     & img {
         width: 40%;
     }
@@ -450,6 +456,7 @@ section.clients {
 
 .clients_logos .right .logo:nth-child(2) {
     background-color: var(--drop-logo-hearest);
+
     & img {
         width: 70%;
     }

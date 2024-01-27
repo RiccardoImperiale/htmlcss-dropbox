@@ -11,6 +11,7 @@
     --drop-bg: #F8822C;
     --drop-bg-light: #F6F3F0;
     --drop-bg-dark: #1C1818;
+    --drop-bg-green: #B4DC19;
 
     --drop-logo-asu: #61082B;
     --drop-logo-bicicle: #D5001F;
@@ -207,7 +208,7 @@ header {
     align-items: flex-start;
 
     & ul {
-       width: 150px;
+        width: 150px;
     }
 
     & li:first-child {
@@ -217,7 +218,7 @@ header {
 
     & li:first-child:hover {
         background-color: transparent;
-        cursor:auto;
+        cursor: auto;
     }
 
     & li {
@@ -237,24 +238,39 @@ header {
 /* Hero Section  ------------------------------> */
 
 .hero_image {
-    background-color: var(--drop-bg);
-    height: 530px;
-    background-image: url('../img/secure-document-share.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: var(--drop-bg-green);
+    align-items: center;
+    justify-content: center;
+
+    & video {
+        width: 100%;
+    }
 }
 
 .hero_text {
-    background-color: var(--drop-bg-light);
+    background-color: var(--drop-bg-dark);
     padding: 3rem 4rem;
     line-height: 3.5rem;
     width: 35%;
+    color: var(--drop-bg-light);
+
+    & p {
+        margin-top: 1rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
 
     & .btn {
+        background-color: #3984ff;
         padding: 1.5rem;
         font-size: 1.2rem;
         margin-top: 2.5rem;
+        color: var(--drop-dark);
+    }
+
+    & .btn:hover {
+        background-color: #5092fb;
     }
 }
 

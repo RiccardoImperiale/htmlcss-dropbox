@@ -250,6 +250,14 @@ header {
 
 /* Hero Section  ------------------------------> */
 
+section.apps,
+section.amaze,
+section.transactions,
+section.contracts {
+    padding: 4rem 0;
+}
+
+
 section.hero {
     background-color: var(--drop-bg-green);
 }
@@ -314,8 +322,6 @@ section.hero {
 section.transactions,
 section.contracts {
     background-color: var(--drop-bg-page-light);
-
-    padding: 4rem 0;
     height: 800px;
 
     & .image {
@@ -383,8 +389,8 @@ section.transform {
 
 section.amaze {
     background-color: var(--drop-bg-page-light);
+    color: var(--drop-bg-dark);
     text-align: center;
-    padding: 4rem 0;
 
     & .row {
         gap: 3rem;
@@ -480,33 +486,39 @@ section.amaze {
 
 
 
-
-
-
-
 /* Apps section ---------------------------------------------> */
 
 
-section.apps {
-    padding: 4rem 0;
-    background-color: var(--drop-bg-dark);
-    color: var(--drop-light);
+section.apps,
+section.warranty {
 
     & .top {
         text-align: center;
         gap: 1rem;
 
         & a {
-            color: var(--drop-light);
             gap: .5rem;
         }
 
         & a span {
-            color: var(--drop-light);
             text-decoration: underline;
             font-size: 1rem;
         }
     }
+}
+
+section.apps {
+    background-color: var(--drop-bg-dark);
+    color: var(--drop-light);
+
+    & a {
+        color: var(--drop-light);
+    }
+
+    & a span {
+        color: var(--drop-light);
+    }
+
 
     & .bottom {
         margin-top: 4rem;
@@ -516,7 +528,6 @@ section.apps {
 
         & .col-3 {
             gap: 1rem;
-
         }
 
         & h3,
@@ -527,22 +538,92 @@ section.apps {
         & img {
             width: 50px;
         }
-
     }
-
-
-
-
 }
 
+/* Warranty section ----------------------------------------------> */
+
+section.warranty {
+    background-color: var(--drop-bg-page-light);
+    color: var(--drop-bg-dark);
+    padding-top: 4rem;
+
+    & .top {
+        padding-bottom: 4rem;
+    }
+
+    & a {
+        color: var(--drop-bg-dark);
+    }
+
+    & a span {
+        color: var(--drop-bg-dark);
+    }
+
+    & .bottom {
+
+        & .left,
+        .right {
+            flex-grow: 1;
+            width: 50%;
+        }
+
+        & .left {
+            background-color: var(--drop-light);
+            padding: 0 3rem;
+        }
 
 
+        & .right {
+            padding: 3rem;
+            background-color: var(--drop-bg-page-img);
 
+            & img {
+                width: 100%;
+            }
+        }
 
+    }
+}
 
+/* FAQ Section ------------------------------> */
 
+details {
+    flex-grow: 1;
+}
 
+.warranty .question {
+    padding: 2rem 2rem 2rem 0;
+    border-top: 1px solid var(--drop-dark);
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+}
 
+.warranty .questions_list {
+    border-bottom: 1px solid var(--drop-dark);
+    height: 100%;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+
+    & span {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+details:hover{
+  background-color: var(--drop-bg-page-img);
+}
+
+.warranty .answer {
+    padding: 0rem 4rem 2rem 0;
+    align-items: center;
+    color: gray;
+}
 
 
 

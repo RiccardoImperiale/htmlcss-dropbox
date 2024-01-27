@@ -238,7 +238,7 @@ header {
 
 .hero_image {
     background-color: var(--drop-bg);
-    height: 530px;
+    height: 560px;
     background-image: url('../img/secure-document-share.svg');
     background-repeat: no-repeat;
     background-size: cover;

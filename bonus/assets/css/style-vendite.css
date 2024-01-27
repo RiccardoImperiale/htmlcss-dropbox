@@ -239,11 +239,14 @@ header {
 
 .hero_image {
     background-color: var(--drop-bg-green);
+    max-height: 600px;
     align-items: center;
     justify-content: center;
 
     & video {
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -290,57 +293,36 @@ header {
 
 /* Team Section ------------------------------> */
 
-section.team,
-section.transform {
-    background-color: var(--drop-bg-dark);
-    color: var(--drop-light);
-}
 
-section.team,
-section.further_info,
-section.transform {
+section.transactions {
     padding: 4rem 0;
+    height: 800px;
 
-    & .top {
-        text-align: center;
+    & .image {
+        background-color: var(--drop-bg-light);
+        width: 60%;
+        padding: 4rem;
+        justify-content: center;
 
-        & h2 {
-            line-height: 3.2rem;
-            margin-bottom: 6rem;
-        }
+        /* & img {} */
     }
 
-    & .bottom {
-        gap: 2rem;
-    }
+    & .text {
+        background-color: var(--drop-light);
+        gap: 1rem;
+        width: 40%;
+        padding: 0 3rem;
+        width: 28rem;
+        justify-content: center;
 
-    & .card {
-        width: calc(100% / 4);
-        gap: 2rem;
-        padding-right: .5rem;
-
-        & i {
-            font-size: 2rem;
-            margin-left: .5rem;
+        & h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
         }
 
         & p {
-            font-size: .85rem;
-        }
+            font-size: 1rem;
 
-        & a {
-            font-size: .85rem;
-            align-items: center;
-            color: var(--drop-light);
-
-            & span {
-                font-size: 1rem;
-                text-decoration: underline;
-            }
-
-            & i {
-                font-size: .85rem;
-            }
         }
     }
 }

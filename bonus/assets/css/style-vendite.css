@@ -291,10 +291,11 @@ header {
 }
 
 
-/* Team Section ------------------------------> */
+/* Transactions - Contracts Section ------------------------------> */
 
 
-section.transactions {
+section.transactions,
+section.contracts {
     padding: 4rem 0;
     height: 800px;
 
@@ -303,27 +304,34 @@ section.transactions {
         width: 60%;
         padding: 4rem;
         justify-content: center;
-
-        /* & img {} */
     }
 
     & .text {
         background-color: var(--drop-light);
         gap: 1rem;
         width: 40%;
-        padding: 0 3rem;
-        width: 28rem;
-        justify-content: center;
+        padding: 4rem;
+        align-items: center;
 
-        & h3 {
-            font-size: 1.5rem;
-            font-weight: 500;
+        & .text_box {
+            width: 22rem;
+            gap: 1rem;
+
+            & h3 {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            & p {
+                font-size: 1rem;
+            }
         }
+    }
+}
 
-        & p {
-            font-size: 1rem;
-
-        }
+section.contracts {
+    & .text {
+        justify-content: end;
     }
 }
 

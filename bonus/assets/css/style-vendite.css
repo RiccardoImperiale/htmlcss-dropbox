@@ -155,6 +155,10 @@ hr {
     border: 1px solid var(--drop-secondary);
 }
 
+.col-3 {
+    width: calc((100% / 12) * 3 - 4rem);
+}
+
 .col-4 {
     width: calc((100% / 12) * 4 - 1rem);
 }
@@ -395,7 +399,8 @@ section.amaze {
             text-align: left;
         }
 
-        & h3 , p {
+        & h3,
+        p {
             font-size: 1rem;
         }
 
@@ -403,7 +408,7 @@ section.amaze {
 }
 
 
-/* Slider --------------------------------------------->  */
+/* #region Slider --------------------------------------------->  */
 
 .splide__slide {
     padding: 6.5rem;
@@ -434,7 +439,6 @@ section.amaze {
         & h5 {
             font-size: 1rem;
         }
-
     }
 }
 
@@ -470,6 +474,79 @@ section.amaze {
 .splide__slide:nth-child(3) .image {
     background-color: var(--drop-logo-hearest);
 }
+
+/* #endregion Slider --------------------------------------------->  */
+
+
+
+
+
+
+
+
+/* Apps section ---------------------------------------------> */
+
+
+section.apps {
+    padding: 4rem 0;
+    background-color: var(--drop-bg-dark);
+    color: var(--drop-light);
+
+    & .top {
+        text-align: center;
+        gap: 1rem;
+
+        & a {
+            color: var(--drop-light);
+            gap: .5rem;
+        }
+
+        & a span {
+            color: var(--drop-light);
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+    }
+
+    & .bottom {
+        margin-top: 4rem;
+        flex-wrap: wrap;
+
+        gap: 4rem;
+
+        & .col-3 {
+            gap: 1rem;
+
+        }
+
+        & h3,
+        p {
+            font-size: 1rem;
+        }
+
+        & img {
+            width: 50px;
+        }
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Call To Action Banner ------------------------------> */

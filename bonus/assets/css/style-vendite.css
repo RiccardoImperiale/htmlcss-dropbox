@@ -12,10 +12,14 @@
     --drop-bg-light: #F6F3F0;
     --drop-bg-dark: #1C1818;
     --drop-bg-green: #B4DC19;
+    --drop-bg-page-light: #F7F5F2;
+    --drop-bg-page-img: #EEE9E2;
 
     --drop-logo-asu: #61082B;
     --drop-logo-bicicle: #D5001F;
     --drop-logo-hearest: #B4D0E7;
+
+
 }
 
 
@@ -88,12 +92,17 @@ hr {
     flex-direction: column;
 }
 
+
 .justify-content-beetween {
     justify-content: space-between;
 }
 
 .align-items-center {
     align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
 }
 
 .list-inline {
@@ -237,6 +246,10 @@ header {
 
 /* Hero Section  ------------------------------> */
 
+section.hero {
+    background-color: var(--drop-bg-green);
+}
+
 .hero_image {
     background-color: var(--drop-bg-green);
     max-height: 600px;
@@ -296,18 +309,21 @@ header {
 
 section.transactions,
 section.contracts {
+    background-color: var(--drop-bg-page-light);
+
     padding: 4rem 0;
     height: 800px;
 
     & .image {
-        background-color: var(--drop-bg-light);
+        background-color: var(--drop-bg-page-img);
         width: 60%;
         padding: 4rem;
         justify-content: center;
+        overflow: hidden;
     }
 
     & .text {
-        background-color: var(--drop-light);
+        background-color: var(--drop-bg-page-light);
         gap: 1rem;
         width: 40%;
         padding: 4rem;
@@ -336,17 +352,16 @@ section.contracts {
 }
 
 
-/* Further Info Section ------------------------------> */
+/* Team Section ------------------------------> */
 
-section.further_info {
-    background-color: var(--drop-bg-light);
-    color: var(--drop-bg-dark);
+section.team {
+    background-color: var(--drop-bg-page-light);
+    padding: 4rem 0 0 0;
+    text-align: center;
 
-    & .card {
-
-        & a {
-            color: var(--drop-bg-dark);
-        }
+    & .video {
+        width: 100%;
+        height: 700px;
     }
 }
 
@@ -360,12 +375,31 @@ section.transform {
 }
 
 
-/* Banner ------------------------------> */
+/* Amaze Section ------------------------------> */
 
-.banner {
-    background-color: var(--drop-bg-light);
+section.amaze {
+    background-color: var(--drop-bg-page-light);
     text-align: center;
-    padding: 5rem 0;
+    padding: 4rem 0;
+
+    & .row {
+        gap: 3rem;
+        padding: 3rem 0;
+
+        & img {
+            width: 50px;
+        }
+
+        & .col-4 {
+            gap: 1rem;
+            text-align: left;
+        }
+
+        & h3 , p {
+            font-size: 1rem;
+        }
+
+    }
 }
 
 

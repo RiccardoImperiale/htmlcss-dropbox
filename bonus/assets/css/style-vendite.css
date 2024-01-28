@@ -253,7 +253,8 @@ header {
 section.apps,
 section.amaze,
 section.transactions,
-section.contracts {
+section.contracts,
+section.numbers {
     padding: 4rem 0;
 }
 
@@ -372,6 +373,23 @@ section.team {
     & .video {
         width: 100%;
         height: 700px;
+        position: relative;
+    }
+
+    & .video::after {
+        background-color: #000000b6;
+        opacity: 1;
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        transition: .25s;
+        border-radius: 1rem;
+    }
+
+    & .video:hover::after {
+        opacity: 0;
+        transition: .25s;
     }
 }
 
@@ -387,7 +405,8 @@ section.transform {
 
 /* Amaze Section ------------------------------> */
 
-section.amaze {
+section.amaze,
+section.numbers {
     background-color: var(--drop-bg-page-light);
     color: var(--drop-bg-dark);
     text-align: center;
@@ -487,7 +506,6 @@ section.amaze {
 
 
 /* Apps section ---------------------------------------------> */
-
 
 section.apps,
 section.warranty {
@@ -615,8 +633,8 @@ summary {
     }
 }
 
-details:hover{
-  background-color: var(--drop-bg-page-img);
+details:hover {
+    background-color: var(--drop-bg-page-img);
 }
 
 .warranty .answer {
@@ -626,8 +644,14 @@ details:hover{
 }
 
 
+/* Numbers section --------------------------------> */
 
-
+section.numbers {
+    & .col-3 {
+        gap: 1.5rem;
+        text-align: left;
+    }
+}
 
 
 /* Call To Action Banner ------------------------------> */

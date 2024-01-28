@@ -254,7 +254,8 @@ section.apps,
 section.amaze,
 section.transactions,
 section.contracts,
-section.numbers {
+section.numbers,
+section.quotes {
     padding: 4rem 0;
 }
 
@@ -650,6 +651,56 @@ section.numbers {
     & .col-3 {
         gap: 1.5rem;
         text-align: left;
+    }
+}
+
+/* Quotes section --------------------------------> */
+
+section.quotes {
+    text-align: center;
+    background-color: var(--drop-bg-dark);
+    color: var(--drop-light);
+
+    & h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        padding-inline: 8rem;
+    }
+
+    & h4 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & p {
+        font-size: .9rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    & .pagination {
+        font-size: 1rem;
+        gap: 1rem;
+
+        & span {
+            color: #6b6b6b;
+        }
+
+        & i {
+            width: 40px;
+            aspect-ratio: 1;
+            transition: .25s;
+        }
+
+        & .fa-chevron-left {
+            opacity: 0;
+        }
+
+        & .fa-chevron-right:hover {
+            background-color: #3e3e3e;
+            transition: .25s;
+        }
     }
 }
 

@@ -92,7 +92,6 @@ hr {
     flex-direction: column;
 }
 
-
 .justify-content-beetween {
     justify-content: space-between;
 }
@@ -186,8 +185,6 @@ header {
         height: 3.5rem;
 
         & li {
-            display: flex;
-            align-items: center;
             height: 3.5rem;
         }
 
@@ -268,8 +265,6 @@ section.hero {
 .hero_image {
     background-color: var(--drop-bg-green);
     max-height: 600px;
-    align-items: center;
-    justify-content: center;
 
     & video {
         height: 100%;
@@ -340,7 +335,6 @@ section.contracts {
         gap: 1rem;
         width: 40%;
         padding: 4rem;
-        align-items: center;
 
         & .text_box {
             width: 22rem;
@@ -378,7 +372,7 @@ section.team {
         position: relative;
     }
 
-    & .video::after {
+    /* & .video::after {
         background-color: #000000b6;
         opacity: 1;
         position: absolute;
@@ -392,7 +386,7 @@ section.team {
     & .video:hover::after {
         opacity: 0;
         transition: .25s;
-    }
+    } */
 }
 
 
@@ -433,78 +427,6 @@ section.productivity {
         }
     }
 }
-
-
-/* #region Slider --------------------------------------------->  */
-
-.splide__slide {
-    padding: 6.5rem;
-
-    & .image {
-        width: 35%;
-        aspect-ratio: 1;
-        /* background-color: var(--drop-logo-asu); */
-        align-items: center;
-        justify-content: center;
-
-        & img {
-            width: 40%;
-            filter: invert();
-        }
-    }
-
-    & .text {
-        width: 65%;
-        padding: 3rem;
-        justify-content: center;
-
-        & p {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        & h5 {
-            font-size: 1rem;
-        }
-    }
-}
-
-.splide__arrow.splide__arrow--next,
-.splide__arrow.splide__arrow--prev {
-    background: transparent;
-    font-size: 2rem;
-}
-
-.splide__arrow.splide__arrow--prev {
-    margin-left: -2rem;
-    display: none;
-}
-
-.splide__arrow.splide__arrow--next {
-    margin-left: 2rem;
-    display: none;
-}
-
-.splide:hover .splide__arrow.splide__arrow--next,
-.splide:hover .splide__arrow.splide__arrow--prev {
-    display: block;
-}
-
-.splide__slide:first-child .image {
-    background-color: var(--drop-logo-asu);
-}
-
-.splide__slide:nth-child(2) .image {
-    background-color: var(--drop-logo-bicicle);
-}
-
-.splide__slide:nth-child(3) .image {
-    background-color: var(--drop-logo-hearest);
-}
-
-/* #endregion Slider --------------------------------------------->  */
-
-
 
 
 /* Apps section ---------------------------------------------> */
@@ -612,9 +534,8 @@ details {
 }
 
 .warranty .question {
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem;
     border-top: 1px solid var(--drop-dark);
-    align-items: center;
     z-index: 1;
     height: 100%;
 }
@@ -639,8 +560,7 @@ details:hover {
 }
 
 .warranty .answer {
-    padding: 0rem 4rem 2rem 0;
-    align-items: center;
+    padding: 0rem 4rem 2rem 2rem;
     color: gray;
 }
 

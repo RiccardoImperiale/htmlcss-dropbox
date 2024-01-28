@@ -75,6 +75,10 @@ hr {
     border-left: none;
 }
 
+ul{
+    list-style: none;
+}
+
 /* #endregion Commons */
 
 /* #region Utilities */

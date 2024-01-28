@@ -18,10 +18,7 @@
     --drop-logo-asu: #61082B;
     --drop-logo-bicicle: #D5001F;
     --drop-logo-hearest: #B4D0E7;
-
-
 }
-
 
 /* #region Commons */
 
@@ -78,6 +75,10 @@ hr {
     border-bottom: none;
     border-right: none;
     border-left: none;
+}
+
+ul {
+    list-style: none;
 }
 
 /* #endregion Commons */
@@ -253,7 +254,8 @@ section.transactions,
 section.contracts,
 section.numbers,
 section.quotes,
-section.productivity {
+section.productivity,
+section.faq {
     padding: 4rem 0;
 }
 
@@ -403,7 +405,8 @@ section.transform {
 
 section.amaze,
 section.numbers,
-section.productivity {
+section.productivity,
+section.faq {
     background-color: var(--drop-bg-page-light);
     color: var(--drop-bg-dark);
     text-align: center;
@@ -527,21 +530,23 @@ section.warranty {
     }
 }
 
-/* FAQ Section ------------------------------> */
+/* FAQ ------------------------------> */
 
 details {
     flex-grow: 1;
 }
 
-.warranty .question {
+.warranty .question,
+.faq .question {
     padding: 2rem;
-    border-top: 1px solid var(--drop-dark);
+    border-top: 1px solid var(--drop-secondary);
     z-index: 1;
     height: 100%;
 }
 
-.warranty .questions_list {
-    border-bottom: 1px solid var(--drop-dark);
+.warranty .questions_list,
+.faq .questions_list {
+    border-bottom: 1px solid var(--drop-secondary);
     height: 100%;
 }
 
@@ -550,7 +555,7 @@ summary {
     list-style: none;
 
     & span {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 600;
     }
 }
@@ -559,9 +564,15 @@ details:hover {
     background-color: var(--drop-bg-page-img);
 }
 
-.warranty .answer {
+.warranty .answer,
+.faq .answer {
+    text-align: left;
     padding: 0rem 4rem 2rem 2rem;
     color: gray;
+}
+
+.faq .answer p {
+    font-size: 1rem;
 }
 
 
@@ -636,6 +647,21 @@ section.productivity {
     & .top a {
         font-size: 1rem;
         margin-bottom: 1.5rem;
+    }
+}
+
+
+/* FAQ Section ------------------------------> */
+
+section.faq {
+    padding-bottom: 10rem;
+
+    & .container-lg{
+        max-width: 900px;
+    }
+
+    & h2 {
+        margin-bottom: 3rem;
     }
 }
 

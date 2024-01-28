@@ -255,7 +255,8 @@ section.amaze,
 section.transactions,
 section.contracts,
 section.numbers,
-section.quotes {
+section.quotes,
+section.productivity {
     padding: 4rem 0;
 }
 
@@ -407,7 +408,8 @@ section.transform {
 /* Amaze Section ------------------------------> */
 
 section.amaze,
-section.numbers {
+section.numbers,
+section.productivity {
     background-color: var(--drop-bg-page-light);
     color: var(--drop-bg-dark);
     text-align: center;
@@ -429,7 +431,6 @@ section.numbers {
         p {
             font-size: 1rem;
         }
-
     }
 }
 
@@ -509,7 +510,8 @@ section.numbers {
 /* Apps section ---------------------------------------------> */
 
 section.apps,
-section.warranty {
+section.warranty,
+section.productivity {
 
     & .top {
         text-align: center;
@@ -592,7 +594,6 @@ section.warranty {
             padding: 0 3rem;
         }
 
-
         & .right {
             padding: 3rem;
             background-color: var(--drop-bg-page-img);
@@ -601,7 +602,6 @@ section.warranty {
                 width: 100%;
             }
         }
-
     }
 }
 
@@ -647,7 +647,8 @@ details:hover {
 
 /* Numbers section --------------------------------> */
 
-section.numbers {
+section.numbers,
+section.productivity {
     & .col-3 {
         gap: 1.5rem;
         text-align: left;
@@ -701,6 +702,20 @@ section.quotes {
             background-color: #3e3e3e;
             transition: .25s;
         }
+    }
+}
+
+/* Quotes section --------------------------------> */
+
+section.productivity {
+    & .top p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & .top a {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 

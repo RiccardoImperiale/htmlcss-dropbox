@@ -290,8 +290,27 @@ section.hero {
 .fa-arrow-down {
     font-size: 2rem;
     margin-top: 2.5rem;
+    animation: bounce 2s ease infinite;
 }
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
 
 /* Plans Section ------------------------------> */
 
@@ -526,6 +545,11 @@ section.business {
 
 .business_cards .card img {
     width: 100%;
+    transition: filter .25s;
+}
+
+.business_cards .card img:hover {
+    filter: blur(2px);
 }
 
 

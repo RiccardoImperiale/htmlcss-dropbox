@@ -558,6 +558,7 @@ section.warranty {
 
 /* FAQ ------------------------------> */
 
+
 details {
     flex-grow: 1;
     transition: .25s;
@@ -588,7 +589,6 @@ summary {
 }
 
 .warranty summary {
-
     & span {
         font-size: 1.25rem;
         padding-right: 4rem;
@@ -608,6 +608,14 @@ details:hover {
 
 .faq .answer p {
     font-size: 1rem;
+}
+
+summary i{
+    transition: 0.2s;
+}
+
+details[open]>summary i{
+    transform: rotate(180deg);
 }
 
 

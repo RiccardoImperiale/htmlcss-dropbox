@@ -494,7 +494,7 @@
 
                 <h2>Domande Frequenti</h2>
                 <div class="questions_list">
-                    <details>
+                    <details id="question_one">
                         <summary class="question d-flex justify-content-beetween">
                             <div>
                                 <span>
@@ -510,7 +510,7 @@
                         </div>
                     </details>
 
-                    <details>
+                    <details id="question_two">
                         <summary class="question d-flex justify-content-beetween">
                             <span>
                                 Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
@@ -524,7 +524,7 @@
                         </div>
                     </details>
 
-                    <details>
+                    <details id="question_three">
                         <summary class="question d-flex justify-content-beetween">
                             <span>
                                 Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
@@ -607,6 +607,27 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- <script>
+        let questions = document.querySelectorAll('details');
+
+        questions.forEach(function (details) {
+            details.addEventListener("toggle", function (event) {
+                if (details.open) {
+                    closeOtherDetails(details.id);
+                } 
+            });
+        });
+
+        function closeOtherDetails(currentId) {
+            questions.forEach(function (otherDetails) {
+                if (otherDetails.id !== currentId && otherDetails.open) {
+                    otherDetails.removeAttribute('open');
+                }
+            });
+        }
+    </script> -->
 </body>
 
 </html>

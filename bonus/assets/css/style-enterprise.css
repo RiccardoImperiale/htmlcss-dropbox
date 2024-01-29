@@ -75,7 +75,7 @@ hr {
     border-left: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -195,11 +195,12 @@ header {
     position: relative;
 }
 
+
 .dropdown_content {
     position: absolute;
     display: none;
     background-color: var(--drop-dropdown);
-    min-width: 100%;
+    /* width: 100%; */
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     left: 0;
@@ -208,18 +209,18 @@ header {
     padding: 1rem 2rem 1rem 0;
     align-items: flex-start;
 
+
     & ul {
-       width: 150px;
+        width: 150px;
     }
 
     & li:first-child {
         font-weight: bold;
-        font-size: .85rem;
     }
 
     & li:first-child:hover {
         background-color: transparent;
-        cursor:auto;
+        cursor: auto;
     }
 
     & li {
@@ -227,11 +228,38 @@ header {
         height: 100%;
         font-size: .75rem;
         padding: .5rem 1rem;
+        transition: .25s;
     }
 
     & li:hover {
         background-color: #E8E1D9;
         cursor: pointer;
+    }
+}
+
+.single_list {
+    padding: 1rem 0 .5rem 0;
+
+    & ul {
+        width: 230px;
+
+        & .text .title {
+            font-size: .8rem;
+
+            opacity: .8;
+
+        }
+
+        & .text .description {
+            font-size: .7rem;
+            opacity: .5;
+
+        }
+
+        & li.d-flex {
+            align-items: flex-start;
+            gap: .5rem;
+        }
     }
 }
 

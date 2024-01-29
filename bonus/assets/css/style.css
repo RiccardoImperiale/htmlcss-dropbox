@@ -321,7 +321,6 @@ section.plans {
 
 /* #region radio  */
 
-/* The container */
 .radio_container {
     /* display: block; */
     position: relative;
@@ -333,14 +332,13 @@ section.plans {
     user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .radio_container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+  
 }
 
-/* Create a custom radio button */
 .checkmark {
     position: absolute;
     top: .08rem;
@@ -353,29 +351,28 @@ section.plans {
     transition: .25s;
 }
 
-/* On mouse-over, add a grey background color */
+input~.checkmark {
+    transition: .5s;
+}
+
 .radio_container:hover input~.checkmark {
     background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
 .radio_container input:checked~.checkmark {
     background-color: var(--drop-primary);
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .radio_container input:checked~.checkmark:after {
     display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .radio_container .checkmark:after {
     width: 8px;
     height: 8px;
@@ -522,7 +519,7 @@ section.partners {
 .partners .partners_image img {
     display: block;
     width: 100%;
-    transition: all .75s;
+    transition: all .7s;
 }
 
 .partners .partners_image img:hover {
@@ -705,6 +702,7 @@ section.faq {
     border-top: 1px solid var(--drop-dark);
     align-items: center;
     z-index: 1;
+    cursor: pointer;
 }
 
 .faq .questions_list {

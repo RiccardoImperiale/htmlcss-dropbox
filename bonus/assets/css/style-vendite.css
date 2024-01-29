@@ -587,6 +587,14 @@ summary {
     }
 }
 
+.warranty summary {
+
+    & span {
+        font-size: 1.25rem;
+        padding-right: 4rem;
+    }
+}
+
 details:hover {
     background-color: var(--drop-bg-page-img);
 }

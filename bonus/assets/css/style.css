@@ -294,6 +294,7 @@ section.hero {
 }
 
 @keyframes bounce {
+
     0%,
     20%,
     50%,
@@ -336,7 +337,7 @@ section.plans {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  
+
 }
 
 .checkmark {
@@ -524,7 +525,7 @@ section.partners {
 
 .partners .partners_image img:hover {
     scale: 1.05;
-    filter:brightness(0.8);
+    filter: brightness(0.8);
 }
 
 
@@ -697,35 +698,35 @@ section.faq {
     margin-bottom: 2rem;
 }
 
-.faq .question {
-    padding: 2rem 2rem 2rem 0;
-    border-top: 1px solid var(--drop-dark);
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-}
-
 .faq .questions_list {
-    border-bottom: 1px solid var(--drop-dark);
+    border-bottom: 1px solid rgb(191, 191, 191);
 }
-
-summary {
-    list-style: none;
-}
-
-/* .faq .question:hover+.answer {
-    display: block;
-}
-
- .question:hover .fa-angle-down {
-    rotate: 90deg;
-    transition: .25s;
-} */
 
 .faq .answer {
     padding: 0rem 4rem 2rem 0;
     align-items: center;
     color: gray;
+}
+
+summary {
+    list-style: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-top: 1px solid rgb(191, 191, 191);
+    padding: 2rem 2rem 2rem 0;
+    cursor: pointer;
+}
+
+summary i{
+    transition: 0.2s;
+}
+
+details[open]>summary i{
+    transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 

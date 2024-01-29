@@ -294,7 +294,6 @@ section.hero {
 }
 
 @keyframes bounce {
-
     0%,
     20%,
     50%,
@@ -511,6 +510,7 @@ section.partners {
 
 .partners .partners_image {
     width: 60%;
+    overflow: hidden;
 }
 
 .partners .partners_text {
@@ -520,7 +520,14 @@ section.partners {
 }
 
 .partners .partners_image img {
+    display: block;
     width: 100%;
+    transition: all .75s;
+}
+
+.partners .partners_image img:hover {
+    scale: 1.05;
+    filter:brightness(0.8);
 }
 
 

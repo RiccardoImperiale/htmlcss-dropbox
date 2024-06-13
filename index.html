@@ -19,23 +19,110 @@
     <title>Dropbox</title>
 </head>
 
-<body class="">
+<body>
     <header>
-        <nav class="container-xl d-flex justify-content-beetween">
+        <nav class="container-xl d-flex justify-content-beetween ">
             <div class="left_nav d-flex">
                 <ul class="d-flex list-inline align-items-center">
                     <li><a class="d-flex" href="#"><img class="logo" src="./assets/img/logo-small.png"
-                                alt="logo dropbox"></a></li>
-                    <li><a href="#">Perché Dropbox</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Piani e Prezzi</a></li>
+                                alt="logo dropbox"></a>
+                    </li>
+                    <li class="d-flex align-items-center p-1 link-hover dropdown">
+                        <a href="#">Prodotti</a>
+                        <div class="dropdown_content single_list d-flex">
+                            <ul>
+                                <li>Non limitarti all'archiviazione di file con Dropbox</li>
+                                <li class="d-flex">
+                                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/Dropbox-logo-nav.svg?id=d587e174-e284-42e8-a18c-85c0d8e57e9e"
+                                        alt="">
+                                    <div class="text">
+                                        <div class="title">Dropbox</div>
+                                        <div class="description">Archivia, condividi e accedi ai file su tutti i
+                                            dispositivi</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/Backup-logo-nav.svg?id=88a257c5-602b-48c0-bf49-e65aa2df21dd"
+                                        alt="">
+                                    <div class="text">
+                                        <div class="title">Backup</div>
+                                        <div class="description">Esegui il backup automatico dei tuoi dispositivi</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/dropbox-sign-logo.svg?id=f9aee885-ea7b-4b1f-81fd-3e908dadc578"
+                                        alt="">
+                                    <div class="text">
+                                        <div class="title">Sign</div>
+                                        <div class="description">Richiedi e aggiungi firme ai tuoi documenti</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/DocSend-logo-nav.svg?id=27f665ce-74c5-4746-8b8c-61cd9e34aadd"
+                                        alt="">
+                                    <div class="text">
+                                        <div class="title">DocSend</div>
+                                        <div class="description">Invia documenti in modo sicuro e tieni traccia delle
+                                            attività</div>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/arrow_right.svg?id=e5339d6c-dcc7-477d-984b-7b2a039ca239"
+                                        alt="">
+                                    <div class="text">
+                                        <div class="title">Accesso anticipato</div>
+                                        <div class="description">Scorri in anteprima le nuove esperienze del prodotto
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-1 link-hover dropdown">
+                        <a href="#">Soluzioni</a>
+                        <div class="dropdown_content d-flex">
+                            <ul>
+                                <li>Team</li>
+                                <li><a href="./pages/vendite.html">Vendite</a></li>
+                                <li>Maketing</li>
+                                <li>Risorse umane</li>
+                                <li>IT</li>
+                                <li>Creativi</li>
+                            </ul>
+                            <ul>
+                                <li>Caso d'uso</li>
+                                <li>Spazio di archiviazione</li>
+                                <li>Revisione video</li>
+                                <li>Firmare documenti</li>
+                                <li>Inviare file</li>
+                            </ul>
+                            <ul>
+                                <li>Settore</li>
+                                <li>Edilizia</li>
+                                <li>Tecnologia</li>
+                                <li>Settore manifatturiero</li>
+                                <li>Mass media</li>
+                                <li>Servizi professionali</li>
+                                <li>Istruzione</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-1 link-hover">
+                        <a href="./pages/enterprise.html">Enterprise</a>
+
+                    </li>
+                    <li class="p-1 link-hover dropdown">
+                        <a href="#">Piani e Prezzi</a>
+                    </li>
                 </ul>
             </div>
-            <div class="right_nav">
+            <div class="right_nav d-flex">
                 <ul class="d-flex list-inline align-items-center">
-                    <li><a href="#">Supporto</a></li>
-                    <li><a href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a href="#">Accedi</a></li>
+                    <li class="p-1 link-hover">
+                        <a href="#">Supporto</a>
+                    </li>
+                    <li class="p-1 link-hover"><a href="#">Contatta l'ufficio vendite</a></li>
+                    <li class="p-1 link-hover"><a href="#">Accedi</a></li>
                     <li><button class="btn start_btn">Inizia</button></li>
                 </ul>
             </div>
@@ -58,7 +145,7 @@
                             Inizia la tua prova gratuita
                         </button>
                         <p>Annulla in qualsiasi momento</p>
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <a href="#plans"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                     <div class="hero_image">
                         <img src="./assets/img/jumbo.png" alt="dropbox screenshots">
@@ -68,14 +155,19 @@
 
         </section>
         <!-- Plans Section -->
-        <section class="plans">
+        <section id="plans" class="plans">
             <div class="container-md d-flex flex-column">
                 <h2>Trova il piano business che fa per te</h2>
                 <div class="billing d-flex">
-                    <input type="radio" name="billing" id="monthly" checked>
-                    <label for="monthly">Fatturazione mensile</label>
-                    <input type="radio" name="billing" id="annual">
-                    <label for="annual">Fatturazione annuale</label>
+                    <label class="radio_container" for="monthly">
+                        Fatturazione mensile
+                        <input type="radio" name="billing" id="monthly" checked>
+                        <span class="checkmark d-flex align-items-center justify-content-center"></span>
+                    </label>
+                    <label class="radio_container" for="annual">Fatturazione annuale
+                        <input type="radio" name="billing" id="annual">
+                        <span class="checkmark d-flex align-items-center justify-content-center"></span>
+                    </label>
                 </div>
                 <div class="plans_cards d-flex">
                     <!-- Card Single Plan -->
@@ -402,24 +494,49 @@
 
                 <h2>Domande Frequenti</h2>
                 <div class="questions_list">
-                    <div class="question d-flex justify-content-beetween">
-                        <span>
-                            Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
-                        </span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <div class="question d-flex justify-content-beetween">
-                        <span>
-                            Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
-                        </span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
-                    <div class="question d-flex justify-content-beetween">
-                        <span>
-                            Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
-                        </span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </div>
+                    <details id="question_one">
+                        <summary class="question d-flex justify-content-beetween">
+                            <div>
+                                <span>
+                                    Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
+                                </span>
+                            </div>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem veniam, esse
+                                voluptate ipsam libero expedita sit tempora repellendus rem laborum nihil nulla et nisi
+                                ex dolorem in praesentium architecto eum!</p>
+                        </div>
+                    </details>
+
+                    <details id="question_two">
+                        <summary class="question d-flex justify-content-beetween">
+                            <span>
+                                Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
+                            </span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem veniam, esse
+                                voluptate ipsam libero expedita sit tempora repellendus rem laborum nihil nulla et nisi
+                                ex dolorem in praesentium architecto eum!</p>
+                        </div>
+                    </details>
+
+                    <details id="question_three">
+                        <summary class="question d-flex justify-content-beetween">
+                            <span>
+                                Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?
+                            </span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </summary>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem veniam, esse
+                                voluptate ipsam libero expedita sit tempora repellendus rem laborum nihil nulla et nisi
+                                ex dolorem in praesentium architecto eum!</p>
+                        </div>
+                    </details>
                 </div>
 
             </div>
@@ -490,6 +607,27 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- <script>
+        let questions = document.querySelectorAll('details');
+
+        questions.forEach(function (details) {
+            details.addEventListener("toggle", function (event) {
+                if (details.open) {
+                    closeOtherDetails(details.id);
+                } 
+            });
+        });
+
+        function closeOtherDetails(currentId) {
+            questions.forEach(function (otherDetails) {
+                if (otherDetails.id !== currentId && otherDetails.open) {
+                    otherDetails.removeAttribute('open');
+                }
+            });
+        }
+    </script> -->
 </body>
 
 </html>
